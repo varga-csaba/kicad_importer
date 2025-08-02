@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -151,7 +152,7 @@ namespace KiCadImport
                         try
                         {
                             bool delete = cbRemove.Checked;
-                            KiCadLibImporter.ImportKiCadLib(kicadProjectPath, zipPath, libName, GetConsoleWriter(), delete);
+                            KiCadLibImporter.ImportKiCadLib(kicadProjectPath, zipPath, libName, GetConsoleWriter(), delete, cb3dEnable.Enabled, tbPython.Text);
                             ScanFolder();
                         }
                         catch (Exception ex)
@@ -190,6 +191,14 @@ namespace KiCadImport
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 tbKicadExe.Text = openFileDialog1.FileName;
+            }
+        }
+
+        private void btn3dEnable_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                tbPython.Text = openFileDialog1.FileName;
             }
         }
 
@@ -257,6 +266,7 @@ namespace KiCadImport
                 ProjectFolder = tbProjectFolder.Text,
                 DownloadsFolder = tbDownloadsFolder.Text,
                 KicadExe = tbKicadExe.Text,
+                PythonExe = tbPython.Text   
             };
 
             string json = JsonConvert.SerializeObject(settings, Formatting.Indented);
@@ -278,11 +288,26 @@ namespace KiCadImport
                     tbProjectFolder.Text = settings.ProjectFolder;
                     tbDownloadsFolder.Text = settings.DownloadsFolder;
                     tbKicadExe.Text = settings.KicadExe;
+                    tbPython.Text = settings.PythonExe;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error loading previous settings: " + ex.Message);
                 }
+            }
+        }
+
+        private void cb3dEnable_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb3dEnable.Checked == true)
+            {
+                tbPython.Enabled = true;
+                btnPython.Enabled = true;
+            }
+            else
+            {
+                tbPython.Enabled = false;
+                btnPython.Enabled = false;
             }
         }
     }
@@ -292,5 +317,6 @@ namespace KiCadImport
         public string ProjectFolder { get; set; }
         public string DownloadsFolder { get; set; }
         public string KicadExe { get; set; }
+        public string PythonExe { get; set; }
     }
 }

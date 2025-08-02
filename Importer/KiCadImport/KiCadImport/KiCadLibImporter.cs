@@ -9,7 +9,7 @@ namespace KiCadImport
 {
     internal class KiCadLibImporter
     {
-        public static void ImportKiCadLib(string projectPath, string zipPath, string libName, Action<string> writeToConsole, bool delete)
+        public static void ImportKiCadLib(string projectPath, string zipPath, string libName, Action<string> writeToConsole, bool delete, bool D3, string pyPath)
         {
             var hardwareDir = Directory.GetParent(projectPath);
             var componentsDir = Path.Combine(hardwareDir.FullName, "components");
@@ -107,11 +107,14 @@ namespace KiCadImport
                 }
             }
 
+            string stepPath;
+
             void UpdateFootprintWithStep()
             {
                 var stepFile = Directory.EnumerateFiles(extractDir, "*.step", SearchOption.AllDirectories)
                                .Concat(Directory.EnumerateFiles(extractDir, "*.stp", SearchOption.AllDirectories))
                                .FirstOrDefault();
+                stepPath = stepFile;
 
                 var modFile = Directory.GetFiles(extractDir, "*.kicad_mod").FirstOrDefault();
                 if (stepFile == null || modFile == null) return;
@@ -155,6 +158,26 @@ namespace KiCadImport
                 }
             }
             writeToConsole("Import completed successfully.");
+
+            if (D3)
+            {
+                var scriptPath = "step_to_stl.py";
+                var stlPath = Path.ChangeExtension(stepPath, ".stl");
+
+
+                var converter = new StepModelHandler(pyPath, scriptPath);
+                if (converter.ConvertStepToStl(stepPath, stlPath, out var error))
+                {
+                    var viewer = new ModelViewerForm();
+                    viewer.LoadModel(stlPath);
+                    writeToConsole(stlPath);
+                    viewer.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show($"Conversion failed: {error}");
+                }
+            }
         }
     }
 }

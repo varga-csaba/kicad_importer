@@ -50,13 +50,19 @@
             cbRemove = new CheckBox();
             btnKicadExe = new Button();
             openFileDialog1 = new OpenFileDialog();
+            cb3dEnable = new CheckBox();
+            tbPython = new TextBox();
+            btnPython = new Button();
+            groupBox1 = new GroupBox();
+            label4 = new Label();
             menuStrip1.SuspendLayout();
             Component.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // btnRefreshKiCad
             // 
-            btnRefreshKiCad.Location = new Point(195, 114);
+            btnRefreshKiCad.Location = new Point(467, 205);
             btnRefreshKiCad.Name = "btnRefreshKiCad";
             btnRefreshKiCad.Size = new Size(96, 23);
             btnRefreshKiCad.TabIndex = 1;
@@ -66,7 +72,7 @@
             // 
             // btnImport
             // 
-            btnImport.Location = new Point(114, 114);
+            btnImport.Location = new Point(386, 205);
             btnImport.Name = "btnImport";
             btnImport.Size = new Size(75, 23);
             btnImport.TabIndex = 2;
@@ -97,31 +103,31 @@
             // 
             // rtbConsole
             // 
-            rtbConsole.Location = new Point(12, 335);
+            rtbConsole.Location = new Point(10, 423);
             rtbConsole.Name = "rtbConsole";
             rtbConsole.ReadOnly = true;
-            rtbConsole.Size = new Size(551, 229);
+            rtbConsole.Size = new Size(553, 229);
             rtbConsole.TabIndex = 4;
             rtbConsole.Text = "";
             rtbConsole.TextChanged += rtbConsole_TextChanged;
             // 
             // tbKicadExe
             // 
-            tbKicadExe.Location = new Point(44, 27);
+            tbKicadExe.Location = new Point(112, 27);
             tbKicadExe.Name = "tbKicadExe";
             tbKicadExe.Size = new Size(413, 23);
             tbKicadExe.TabIndex = 5;
             // 
             // tbProjectFolder
             // 
-            tbProjectFolder.Location = new Point(44, 56);
+            tbProjectFolder.Location = new Point(112, 56);
             tbProjectFolder.Name = "tbProjectFolder";
             tbProjectFolder.Size = new Size(413, 23);
             tbProjectFolder.TabIndex = 6;
             // 
             // tbDownloadsFolder
             // 
-            tbDownloadsFolder.Location = new Point(44, 85);
+            tbDownloadsFolder.Location = new Point(112, 85);
             tbDownloadsFolder.Name = "tbDownloadsFolder";
             tbDownloadsFolder.Size = new Size(413, 23);
             tbDownloadsFolder.TabIndex = 7;
@@ -129,7 +135,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(463, 30);
+            label1.Location = new Point(10, 30);
             label1.Name = "label1";
             label1.Size = new Size(58, 15);
             label1.TabIndex = 10;
@@ -138,7 +144,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(463, 59);
+            label2.Location = new Point(10, 59);
             label2.Name = "label2";
             label2.Size = new Size(80, 15);
             label2.TabIndex = 11;
@@ -147,7 +153,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(463, 88);
+            label3.Location = new Point(10, 88);
             label3.Name = "label3";
             label3.Size = new Size(102, 15);
             label3.TabIndex = 12;
@@ -156,7 +162,7 @@
             // btnProjectFolder
             // 
             btnProjectFolder.Image = Properties.Resources.open_folder;
-            btnProjectFolder.Location = new Point(10, 56);
+            btnProjectFolder.Location = new Point(531, 55);
             btnProjectFolder.Name = "btnProjectFolder";
             btnProjectFolder.Size = new Size(26, 23);
             btnProjectFolder.TabIndex = 13;
@@ -166,7 +172,7 @@
             // btnDownloadsFolder
             // 
             btnDownloadsFolder.Image = Properties.Resources.open_folder;
-            btnDownloadsFolder.Location = new Point(10, 85);
+            btnDownloadsFolder.Location = new Point(531, 84);
             btnDownloadsFolder.Name = "btnDownloadsFolder";
             btnDownloadsFolder.Size = new Size(26, 23);
             btnDownloadsFolder.TabIndex = 14;
@@ -184,7 +190,7 @@
             // Component
             // 
             Component.Controls.Add(flowLayoutPanel1);
-            Component.Location = new Point(10, 143);
+            Component.Location = new Point(10, 231);
             Component.Name = "Component";
             Component.Size = new Size(553, 186);
             Component.TabIndex = 16;
@@ -193,7 +199,7 @@
             // 
             // btnScanFolder
             // 
-            btnScanFolder.Location = new Point(10, 114);
+            btnScanFolder.Location = new Point(282, 205);
             btnScanFolder.Name = "btnScanFolder";
             btnScanFolder.Size = new Size(98, 23);
             btnScanFolder.TabIndex = 17;
@@ -204,7 +210,7 @@
             // cbRemove
             // 
             cbRemove.AutoSize = true;
-            cbRemove.Location = new Point(410, 116);
+            cbRemove.Location = new Point(12, 208);
             cbRemove.Name = "cbRemove";
             cbRemove.Size = new Size(155, 19);
             cbRemove.TabIndex = 18;
@@ -214,7 +220,7 @@
             // btnKicadExe
             // 
             btnKicadExe.Image = Properties.Resources.open_folder;
-            btnKicadExe.Location = new Point(10, 27);
+            btnKicadExe.Location = new Point(531, 26);
             btnKicadExe.Name = "btnKicadExe";
             btnKicadExe.Size = new Size(26, 23);
             btnKicadExe.TabIndex = 19;
@@ -225,11 +231,64 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // cb3dEnable
+            // 
+            cb3dEnable.AutoSize = true;
+            cb3dEnable.Location = new Point(6, 22);
+            cb3dEnable.Name = "cb3dEnable";
+            cb3dEnable.Size = new Size(61, 19);
+            cb3dEnable.TabIndex = 20;
+            cb3dEnable.Text = "Enable";
+            cb3dEnable.UseVisualStyleBackColor = true;
+            cb3dEnable.CheckedChanged += cb3dEnable_CheckedChanged;
+            // 
+            // tbPython
+            // 
+            tbPython.Enabled = false;
+            tbPython.Location = new Point(102, 43);
+            tbPython.Name = "tbPython";
+            tbPython.Size = new Size(413, 23);
+            tbPython.TabIndex = 21;
+            // 
+            // btnPython
+            // 
+            btnPython.Enabled = false;
+            btnPython.Image = Properties.Resources.open_folder;
+            btnPython.Location = new Point(521, 43);
+            btnPython.Name = "btnPython";
+            btnPython.Size = new Size(26, 23);
+            btnPython.TabIndex = 22;
+            btnPython.UseVisualStyleBackColor = true;
+            btnPython.Click += btn3dEnable_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(tbPython);
+            groupBox1.Controls.Add(btnPython);
+            groupBox1.Controls.Add(cb3dEnable);
+            groupBox1.Location = new Point(10, 114);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(553, 81);
+            groupBox1.TabIndex = 23;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "3D Viewer";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 47);
+            label4.Name = "label4";
+            label4.Size = new Size(69, 15);
+            label4.TabIndex = 24;
+            label4.Text = "Python 3.10";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(575, 576);
+            ClientSize = new Size(575, 662);
+            Controls.Add(groupBox1);
             Controls.Add(btnKicadExe);
             Controls.Add(cbRemove);
             Controls.Add(btnScanFolder);
@@ -248,8 +307,8 @@
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            MaximumSize = new Size(591, 615);
-            MinimumSize = new Size(591, 615);
+            MaximumSize = new Size(591, 701);
+            MinimumSize = new Size(591, 701);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Importer";
@@ -258,6 +317,8 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             Component.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -284,5 +345,10 @@
         private CheckBox cbRemove;
         private Button btnKicadExe;
         private OpenFileDialog openFileDialog1;
+        private CheckBox cb3dEnable;
+        private TextBox tbPython;
+        private Button btnPython;
+        private GroupBox groupBox1;
+        private Label label4;
     }
 }

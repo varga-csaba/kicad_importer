@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\KiCad_script\\Client\\KiCadImport\\",
+  "WorkspaceRootPath": "C:\\kicad_importer\\Importer\\KiCadImport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_script\\client\\kicadimport\\kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\kicadlibimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\kicadlibimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_script\\client\\kicadimport\\kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_script\\client\\kicadimport\\kicadimport\\kicadlibimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\kicadlibimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\modelviewerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\modelviewerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\windowinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\windowinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\modelviewerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\modelviewerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|c:\\kicad_importer\\importer\\kicadimport\\kicadimport\\kicadimport.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{15526BC4-D982-4CBB-A6D4-A2002CAC3F78}|KiCadImport\\KiCadImport.csproj|solutionrelative:kicadimport\\kicadimport.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +50,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KiCadLibImporter.cs",
-              "DocumentMoniker": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\KiCadLibImporter.cs",
-              "RelativeDocumentMoniker": "KiCadImport\\KiCadLibImporter.cs",
-              "ToolTip": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\KiCadLibImporter.cs",
-              "RelativeToolTip": "KiCadImport\\KiCadLibImporter.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAIwJ0AAABQAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\Form1.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.cs [Design]",
+              "RelativeToolTip": "KiCadImport\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:17:46.766Z"
+              "WhenOpened": "2025-08-02T19:26:26.686Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\Form1.Designer.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.Designer.cs",
+              "RelativeToolTip": "KiCadImport\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T19:24:29.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KiCadImport",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\KiCadImport.csproj",
+              "RelativeDocumentMoniker": "KiCadImport\\KiCadImport.csproj",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\KiCadImport.csproj",
+              "RelativeToolTip": "KiCadImport\\KiCadImport.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-02T18:10:40.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModelViewerForm.cs",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\ModelViewerForm.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\ModelViewerForm.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\ModelViewerForm.cs",
+              "RelativeToolTip": "KiCadImport\\ModelViewerForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T18:09:09.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelViewerForm.cs [Design]",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\ModelViewerForm.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\ModelViewerForm.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\ModelViewerForm.cs [Design]",
+              "RelativeToolTip": "KiCadImport\\ModelViewerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T18:08:37.564Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WindowInfo.cs",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\WindowInfo.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\WindowInfo.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\WindowInfo.cs",
+              "RelativeToolTip": "KiCadImport\\WindowInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T17:46:53.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\Form1.cs",
-              "RelativeDocumentMoniker": "KiCadImport\\Form1.cs",
-              "ToolTip": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\Form1.cs [Design]",
-              "RelativeToolTip": "KiCadImport\\Form1.cs [Design]",
+              "Title": "KiCadLibImporter.cs",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\KiCadLibImporter.cs",
+              "RelativeDocumentMoniker": "KiCadImport\\KiCadLibImporter.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\KiCadLibImporter.cs",
+              "RelativeToolTip": "KiCadImport\\KiCadLibImporter.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAswKQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T19:52:30.084Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-30T18:17:46.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\Form1.cs",
+              "DocumentMoniker": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.cs",
               "RelativeDocumentMoniker": "KiCadImport\\Form1.cs",
-              "ToolTip": "C:\\KiCad_script\\Client\\KiCadImport\\KiCadImport\\Form1.cs",
+              "ToolTip": "C:\\kicad_importer\\Importer\\KiCadImport\\KiCadImport\\Form1.cs",
               "RelativeToolTip": "KiCadImport\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAJsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T19:53:31.608Z"
+              "WhenOpened": "2025-07-29T19:53:31.608Z",
+              "EditorCaption": ""
             }
           ]
         }
